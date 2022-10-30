@@ -7,10 +7,11 @@ fetch("https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gi
   let cases = data.gitmojis.map(element => {
 
     lines = []
-    lines[0] = `  ${element.code.split(":")[1]})`
-    lines[1] = `    message="${element.description} $2"`
-    lines[2] = `    ;;`
-    lines[3] = ``
+    lines[0] = `  # ${element.emoji}: ${element.name}`
+    lines[1] = `  ${element.code.split(":")[1]})`
+    lines[2] = `    message="${element.description} $2"`
+    lines[3] = `    ;;`
+    lines[4] = ``
 
     return lines.join("\n")
   })
