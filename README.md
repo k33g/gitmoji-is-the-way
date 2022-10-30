@@ -1,0 +1,1 @@
+# gitmoji-is-the-way
