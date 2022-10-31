@@ -30,4 +30,4 @@ fi
 gitmoji_comment=`head -1 $gitmoji_cache_file | awk '{ match($0, /.*<code>:truck:<\/code><\/button><p>([^<]*)<\/p>.*/, arr); print arr[1] }'`
 
 # Finally executing the git commit
-git add .; git commit -m ":${gitmoji_code}: ${gitmoji_comment} ${commit_message}"; git push
+git add . && git commit -m ":${gitmoji_code}: ${gitmoji_comment} ${commit_message}" && git push
