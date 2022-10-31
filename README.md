@@ -15,3 +15,7 @@ Now, I use `git.sh` in all my projects.
 # will produce
 git add .; git commit -m ":tada: Begin a project. my project"; git push
 ```
+
+**Requirements**:
+
+The script relies on `awk`, and `curl` standard tools.
